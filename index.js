@@ -261,6 +261,7 @@ QuickBooks.prototype.upload = function(filename, contentType, stream, entityType
         Id: id,
         SyncToken: '0',
         AttachableRef: [{
+          IncludeOnSend: true,
           EntityRef: {
             type: entityType,
             value: entityId + ''
